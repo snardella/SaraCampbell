@@ -1,0 +1,291 @@
+
+
+
+/* about us page  */
+/*.about-us .inner-banner {
+    
+     background-size: 59% 100%; 
+    
+}*/
+
+.about-us .heroCarousel-title{
+	text-align:left;
+}
+.about-us .inner-banner .heroCarousel-content p {
+    
+    color: #383944;
+}
+
+ .page.about-us .quote-section {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.page.about-us .philanthropy-section {
+	margin-bottom:0px !important;
+	margin-top: 70px;
+}
+ .page.about-us .made-section{
+	 margin:0px !important;
+ }
+ 
+ div.ultimate-hostess-section > div.clear{
+	 height:0px !important;
+ }
+ 
+ 
+ .page.about-us input#nl_email {
+    background: #F7F7F7;
+    border: 1px solid #DDDEE1;
+    box-sizing: border-box;
+}
+.page.about-us input.button.form-prefixPostfix-button--postfix {
+    letter-spacing: 0.15em;
+}
+.page.about-us .subscribe-section {
+    
+    background-size: contain;
+   
+}
+
+.page.about-us .subscribe-section .title {
+    padding-bottom: 24px;
+}
+
+
+.single-product-pages .productView-img-container img {
+    /*object-fit: cover !important;*/
+}
+.productView-options .form-action .button[disabled] {
+    border-color: #dadada;
+}.single-product-page .accordion-block {
+    border-top: 1px solid #DDDEE1;
+    border-bottom: 1px solid #DDDEE1;
+}
+
+@media only screen and (min-width: 767px) {
+
+.form-prefixPostfix .button, .form-prefixPostfix .form-input {
+    display: block;
+    width: auto;
+}
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.page.about-us .custom-style-subscribe-section-div .col-1-3 {
+    max-width: 100%;
+}
+
+
+.page.about-us .custom-style-subscribe-section-div .col-1-9 {
+    max-width: 100%;
+	width:100%;
+}
+
+.page.about-us .form-prefixPostfix .form-input {
+    display: block;
+    width: auto !important;
+}
+
+.page.about-us .button.form-prefixPostfix-button--postfix {
+    margin: 0px !important;
+	width:auto !important;
+}
+
+
+.page.about-us .heroCarousel-title {
+    padding-bottom: 20px;
+}
+
+.page.about-us .heroCarousel-description {
+  padding-bottom: 20px;
+}
+
+.page.about-us div.ultimate-hostess-section > div:nth-child(3) {
+    display: none;
+}
+
+.page.about-us .align-center .page-title , .page.about-us .align-center p ,.page.about-us .align-center div {
+    text-align: left;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+.page.about-us .philanthropy-section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.page.about-us .philanthropy-section > div:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+
+.page.about-us .p-t-20{
+	 padding-top: 0% !important;
+}
+
+
+.about-section .vertical-align.p-left-50 {
+    margin-top: 0px !important;
+}
+
+.made-section .vertical-align {
+    margin-top: 0px;
+}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+
+.page.about-us .button.form-prefixPostfix-button--postfix {
+   
+width: 100% !important;
+}
+}
+
+
+ 
+ /* end about us page  */
+ 
+ 
+ 
+ 
+ /* category page   */
+ 
+ span.price.price--non-sale {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    /* color: rgb(55, 55, 55); */
+    font-size: 16px !important;
+}
+
+.rating--small .icon, .productView-rating .icon {
+    width: 14px;
+    height: 14px;
+}
+
+.future-product .col-1-6{
+padding-left: 20px;
+padding-right: 20px;
+}
+
+  
+  
+
+  
+  @media all and (max-width: 1260px) and (min-width: 1040px) {
+  
+		.single-product-pages .productView-options .form-action .button {
+    width: 60% !important;
+}
+
+  }	
+
+
+@media all and (max-width: 1028px) and (min-width: 800px) {
+	.container.single-product-page .breadcrumbs, .page.page--category ul.breadcrumbs {
+   		 margin-top: 50px !important;
+	}
+
+}
+  
+  
+
+ 
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+	
+	
+	/* category css  */
+	.future-product::before {
+    
+    left: -11% !important;
+   
+}
+	
+	/* end category css  */
+ .single-product-pages .productView-image {
+    width: 100%;
+}
+.container.single-product-page .breadcrumbs {
+    margin-top: 20px;
+}
+
+ .productGrid.productGrid--maxCol6 .product {
+    flex: unset;
+    max-width: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+
+.brand-message .col-1-4 {
+    max-width: 33%;
+}
+
+.single-product-pages .productView-options .form-action .button {
+    padding: 15px 23px;
+
+
+}
+
+
+.footer-newsletter label {
+  
+    left: 25px;
+
+
+}
+}
+
+@media only screen and (max-width: 481px) {
+.brand-message .col-1-4 {
+    max-width: 100%;
+}
+
+ .single-product-pages .productView-image {
+    width: 100% ;
+}
+/*  category css */
+.future-product {
+    margin: 40px 0;
+    position: relative;
+}
+/*  endcategory css */
+}
+
+/*  category css */
+@media only screen and (max-width: 370px) {
+.pagination-list li.item-results {
+    
+    font-size: 11px;
+    
+}
+}
+
+/*  endcategory css */

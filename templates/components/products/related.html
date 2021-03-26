@@ -1,0 +1,33 @@
+<ul class="productGrid productGrid--maxCol{{ columns }}"{{#if settings.data_tag_enabled}} data-list-name="Related Products" {{/if}}>
+    {{#each products}}
+    <li class="product">
+        {{>components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+    </li>
+    {{/each}}
+</ul>
+</div>
+
+<div class="brand-message">
+	<div class="container">
+		<div class="head align-center">
+			<div class="sub-title">our mission</div>
+			<h2 class="page-title">Service Above All</h2>
+		</div>
+		<div class="col-1-4 firstcol">
+			<div class="icon"><img class="__mce_add_custom__" title="" src="{{cdn 'assets/img/brand01.png'}}" alt=""></div>
+			<p>SUPPORTING CAUSES<br>CLOSE TO YOUR HEART</p>
+		</div>
+		<div class="col-1-4 secondcol">
+			<div class="icon"><img class="__mce_add_custom__" title="" src="{{cdn 'assets/img/brand02.png'}}" alt=""></div>
+			<p>PRODUCTS PROUDLY<br>MADE IN THE USA</p>
+		</div>
+		<div class="col-1-4 thirdcol">
+			<div class="icon"><img class="__mce_add_custom__" title="" src="{{cdn 'assets/img/brand03.png'}}" alt=""></div>
+			<p>PERSONALIZED SHOPPING<br>EXPERIENCE</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div class="clear"></div>

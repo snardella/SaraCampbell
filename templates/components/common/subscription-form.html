@@ -1,0 +1,44 @@
+<h5>Save 15% When You Subscribe!</h5>
+{{#if settings.show_newsletter_summary }}
+    <div class="footer-newsletter-summary"><p>{{settings.newsletter_summary}}</p></div>
+{{/if}}
+
+<form class="form" action="{{urls.subscribe.action}}" method="post">
+    <fieldset class="form-fieldset">
+        <input type="hidden" name="action" value="subscribe">
+        <input type="hidden" name="nl_first_name" value="bc">
+        <input type="hidden" name="check" value="1">
+        <div class="form-field">
+            <label class="form-label is-srOnly" for="nl_email">{{lang 'common.email_address'}}</label>
+            <div class="form-prefixPostfix wrap">
+                <div class="col-1-6">
+                    <div class="field-wrap">
+                        <label class="">
+                            Full Name
+                          </label>
+                        <input class="form-input" id="nl_name" name="nl_name" type="name" value="{{customer.name}}">
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="field-wrap p-l-5">
+                        <label class="">
+                            Email
+                          </label>
+                        <input class="form-input" id="nl_email" name="nl_email" type="email" value="{{customer.email}}">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                {{!--<div class="col-1-12">
+                    <div class="field-wrap">
+                        <label class="">
+                            Message
+                          </label>
+                        <textarea class="form-textarea" id="nl_message" name="nl_message" value="{{customer.email}}"></textarea>
+                    </div>
+                </div>--}}
+                <div class="clear"></div>
+                <div class="subscribe-btn"><input class="form-prefixPostfix-button--postfix" type="submit" value="{{lang 'Subscribe!'}}"></div>
+            </div>
+        </div>
+    </fieldset>
+</form>

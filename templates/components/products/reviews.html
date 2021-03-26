@@ -1,0 +1,23 @@
+{{#if reviews.total}}
+<section class="productReviews" id="product-reviews" data-product-reviews>
+    <div id="productReviews-content" aria-hidden="false">
+        <ul class="productReviews-list" id="productReviews-list">
+            {{#each reviews.list}}
+            <div class="review-box">
+            <div class="review-rating">{{> components/products/ratings rating=rating}}</div>
+            <div class="review-detail"><p>{{{ sanitize text }}}</p></div>
+            <div class="review-auther">
+                {{#if name}}
+                    <h3>{{lang 'products.reviews.post_by' name=name }}</h3>
+				<p>{{lang 'products.reviews.post_on' date=date }}</p>
+                {{else}}
+                    {{lang 'products.reviews.post_on_by' date=date name=(lang 'products.reviews.anonymous_poster')}}
+                {{/if}}
+            </div>
+        </div>
+            {{/each}}
+        </ul>
+        <!-- {{> components/common/paginator pagination.reviews}} -->
+    </div>
+</section>
+{{/if}}

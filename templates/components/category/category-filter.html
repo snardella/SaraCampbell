@@ -1,0 +1,24 @@
+<div class="products-filter">
+
+{{#if category.faceted_search_enabled}}
+        {{!--<input type="checkbox" id="facetsCheck">--}}
+        {{> components/faceted-search/index category}}
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+	
+	$(function() {
+    $('.accordion-navigation.toggleLink').removeClass('is-open');
+			$('.accordion-navigation.toggleLink').attr('aria-expanded', 'false');
+			$('.accordion-content').removeClass('is-open');
+			$('.accordion-content').attr('aria-hidden', 'true');
+});
+	
+</script>
+    {{else}}
+        {{> components/category/shop-by-price shop_by_price=category.shop_by_price category_url=category.url}}
+    {{/if}}
+<form class="actionBar sort-products" method="get" data-sort-by>
+    {{> components/category/sort-box sort=sort}}
+</form>
+
+</div>

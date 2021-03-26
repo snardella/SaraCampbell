@@ -1,0 +1,38 @@
+<nav class="navUser">
+    <ul class="navUser-section navUser-section--alt">
+        <li class="navUser-item navUser-item--account">
+            
+            {{#if customer}}
+                <a class="navUser-action" href="{{urls.account.index}}">{{lang 'common.account'}}</a> <span>or</span>
+                <a class="navUser-action" href="{{urls.auth.logout}}">{{lang 'common.logout'}}</a>
+			<a class="navUser-action--mobile" href="{{urls.account.index}}"></a>
+            {{else}}
+			
+                <a class="navUser-action" href="{{urls.auth.login}}">{{lang 'common.login'}}</a>
+                {{#if settings.account_creation_enabled}}
+                    <span>{{lang 'common.or'}}</span> <a class="navUser-action" href="{{urls.auth.create_account}}">{{lang 'common.sign_up'}}</a>
+                {{/if}}
+			<a class="navUser-action--mobile" href="{{urls.auth.login}}"></a>
+            {{/if}}
+        </li>
+        {{> components/common/currency-selector}}
+        <li class="navUser-item navUser-item--mobile-search">
+            <i class="icon" aria-hidden="true">
+                <svg><use xlink:href="#icon-search" /></svg>
+            </i>
+        </li>
+        <li class="navUser-item navUser-item--cart shopping-cart">
+            <a
+                class="navUser-action"
+                data-cart-preview
+                data-dropdown="cart-preview-dropdown"
+                data-options="align:right"
+                href="{{urls.cart}}">
+                
+                <span class="{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
+            <span class="cart-lable">Cart</span></a>
+
+            <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
+        </li>
+    </ul>
+</nav>
